@@ -1,0 +1,166 @@
+@import url(reset.css);
+
+/* Acide */
+
+.acide{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: #EFEBFF;
+    width: 102px;
+    transition: width 1s linear;
+    padding: 37px 27px;
+    overflow: hidden;
+    border-radius: 0 8px 8px 0;
+}
+
+.logo-link{
+    display: flex;
+    align-items: center; 
+    gap: 12px;     
+    padding-bottom: 52px;
+    text-decoration: none;
+}
+.logo-text{
+    font-weight: 600;
+    font-size: 26px;
+    color: #1a1a1a;
+    transition: opacity 0.3s linear ;
+    opacity: 0;   
+}
+.acide:hover .logo-text{
+    opacity: 1; 
+}
+.acide-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;   
+    padding: 7px;
+    
+}
+.acide-link:hover .acide-icon {
+    transform: rotate(-45deg) scale(1.4);
+}
+.acide-link .acide-link-border{
+    border: 2px solid black;
+    border-radius: 4px;
+    line-height: 10px;
+    padding: 2px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.wrapper{
+    padding-left: 102px;
+    transition: padding 1s linear;
+}
+.acide:hover {
+    width: 306px;
+}
+.acide:hover + .wrapper {
+    padding-left: 306px;
+}
+.acide-icon {
+    width: 30px;
+    height: 30px;
+    fill: black;
+    transform: rotate(-45deg);
+    transition: transform .5s linear;
+}
+.acide:hover .aside-icon-text{
+    opacity: 1; 
+}
+.aside-icon-text{
+    font-weight: 400;
+    font-size: 16px;
+    color: #1a1a1a;
+    padding-left: 10px;
+    transition: opacity 0.3s linear ;
+    opacity: 0;
+    
+}
+
+
+/* My styles */
+
+
+.body {
+    width: 1347px;
+    font-size: 16px;
+    font-weight: 400;
+    background: #FFFFFF;
+
+}
+.container {
+    padding-top: 128px;
+    margin: 0 auto;
+}
+
+/* Main table */
+.table-data {
+    margin: 0 auto;
+    max-width: 903px;
+    border-style: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px #aaaab8;
+
+}
+
+
+.table-data th,
+.table-data td{
+    border-top: 1px solid #aaaab8;
+
+}
+.user , .email {
+    width: 300px;
+}
+.phone{
+    width: 158px;
+}
+.status{
+    width: 144px;
+}
+.table-data th{
+    padding: 18px 16px;
+    text-align: left;
+    font-weight: 700;
+}
+.table-data td{
+    padding: 8px 16px;
+    vertical-align: middle;
+}
+.table-data td p + p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #808080;
+
+}
+.text_center {
+    text-align: center;
+}
+.btn {
+    color: #e4e4ef;
+    background: #fff;
+    font-size: 12px;
+    padding: 8px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.btn.primary{
+    color: #605dec;
+    background:  #ededfe;
+}
+.btn.success{
+    color: #31aa27;
+    background: #ebf6eb;
+}
+.btn.warning{
+    background: #fff4e4;
+    color: #e99518;
+}
+.btn.error{
+    color: #f93232;
+    background: #fff0f0;
+}
